@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&display=swap');
+html {
+  position: relative;
+  overflow-x: hidden !important;
+}
+#root, body{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-family: 'Architects Daughter', cursive;
+}
+
+div{
+  display: block;
+}
+.page{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  font-size: 32px;
+  margin: 20px;
+}
+span{
+  color: black;
+}
+
+*, ::after, ::before{
+  box-sizing: border-box;
+}
+
+.desc{
+  font-size: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+body {
+  font-family:'Architects Daughter', cursive;;
+  font-size: 16px;
+  background: #f2f7fd;
+}
+
+.wishlist-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wishlist-item-container {
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 5px 0 rgb(0 0 0 / 50%);
+  border-radius: 8px;
+  padding: 8px 8px 60px;
+  position: relative;
+}
+
+.wishlist-item-image {
+  width: 90%;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.wishlist-item-name {
+  margin: 10px;
+  font-weight: 600;
+}
+
+.reason {
+  width: 90%;
+  text-align: center;
+  margin: 10px;
+}
+
+.shopIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.number {
+  font-size: 24px;
+  color: transparent;
+  text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+
+::selection {
+  background: transparent;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fa9b48 100%);
+}
+
+.scroll-list {
+  width: 100%;
+  max-width: 700px;
+  padding: 25px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+  .scroll-list {
+    margin-top: 20px;
+  }
+}
+.scroll-list__wrp {
+  width: 100%;
+  height: 700px;
+  overflow: auto;
+  padding: 50px;
+  box-shadow: 0px 7px 46px 0px rgba(41, 53, 108, 0.45);
+  background: #4b1079;
+  background: #4b1079;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-image: linear-gradient(147deg, #6e0777 0%, #380c70 74%);
+}
+.scroll-list__wrp .scrollbar-track {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .scroll-list__wrp {
+    padding: 25px;
+  }
+}
+.scroll-list__item {
+  width: 100%;
+  height: 155px;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-image: linear-gradient(147deg, #ff7c34 0%, #c31269 74%);
+  transition: all 0.35s ease-in-out;
+  opacity: 0;
+  transform: scale(0.7);
+  box-shadow: 0px 7px 16px 0px rgba(41, 53, 108, 0.25);
+}
+.scroll-list__item.item-hide {
+  opacity: 0;
+  transform: scale(0.7);
+}
+.scroll-list__item.item-focus {
+  opacity: 1;
+  transform: scale(1);
+}
+.scroll-list__item.item-next {
+  opacity: 1;
+  transform: scale(1);
+}
+.scroll-list__item.item-next + .scroll-list__item {
+  opacity: 1;
+  transform: scale(1);
+}
+.scroll-list__item:last-child {
+  margin-bottom: 155px;
+}
